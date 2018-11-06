@@ -22,12 +22,11 @@ Homer.prototype.draw= function(){
       var KEY_LEFT = 37;
       switch (e.keyCode) {
         case KEY_LEFT:
-          (this.homer.this.x-=this.speedx)
-          break;}
+          (this.x-=this.speedx)
+          break;
+          case KEY_RIGHT:
+          (this.x+=this.speedx)
+          break;
+      }
     }
   }
-
-
-
-        
-      

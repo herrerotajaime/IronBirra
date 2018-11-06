@@ -14,4 +14,10 @@ function Canvas(id){
 Canvas.prototype.Startgame=function(){
   this.background.draw()
   this.homer.draw()
-}
+   this.interval = setInterval(function() {
+    this.framesCounter++;
+    if (this.framesCounter > 1000) {
+     this.framesCounter = 0;
+     }
+    }
+  
